@@ -1,29 +1,43 @@
+@font-face {
+    font-family:Roboto;
+    src: url(Fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
+
+
+    font-family:Roboto;
 }
 .header{
     display: flex;
     justify-content: space-between;
-    height: 30px;
+    align-items: center;
+    height: 50px;
     padding: 10px;
 }
 .header-logo{
     font-size: 24px;
     font-weight: bold;
     color: #f9faf8;
+    padding: 10px;
+}
+.header-links{
+    display: flex;
+    gap: 20px;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: lightgray;
 }
+
+
+
 .header ,.introduction{
     background-color: #1f2937;
     color: white;
-    font-family: Roboto;
-
-    padding: 0 100px;
+    padding: 0 180px;
 }
 
 
@@ -37,17 +51,81 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+
+
+    height: 500px;
+    padding: 10px;
 }
 .introduction-main-message{
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
+    padding: 10px;
+    padding-left: 0px;
 }
-.introduction-secondary-message{
+.introduction-secondary-message,
+.header-links{
     font-size: 18px;
     color: #E5E7EB;
-    font-weight: 900;
+
+    padding: 10px;
+    padding-left: 0px;
+}
+.introduction-button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
 }
 .img{
     flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.information-title{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.information-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+.information-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    border: #3882f6;
+    border: 10px;
+}
+.information-item img{
+    border-radius: 20px;
+    image-rendering: crisp-edges;
+}
+.information-item-text{
+    font-size: 18px;
+    text-align: center;
+    color: #E5E7EB;
+    color: rgb(77, 77, 77);
+    padding: 4px;
 }
